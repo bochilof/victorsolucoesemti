@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- C S S -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" >
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
+    <link rel="stylesheet" href="css/anydesk.css">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icon.ico">
+
+    <script src="js/banner.js"></script>
+
+    <title>Document</title>
+</head>
+<body id="body" onLoad="banner1()">
+
+    <!-- H E A D E R -->
+    <header>
+        <!-- L O G O -->
+        <div class="logo">
+            <a href="http://192.168.100.100/victorinformatica">
+                <img class="img-logo" src="imagens/logo-white.png">
+            </a>
+        </div>
+
+        <!-- M E N U -->
+        <nav id="menu" class="menu">
+            <ul>
+                <a href="#"><li onclick="menuOff()">Início</li></a>
+                <a href="#servicos"><li onclick="menuOff()">Serviços</li></a>
+                <a href="#contato"><li onclick="menuOff()">Contato</li></a>
+            </ul>
+        </nav>
+
+        <!-- B O T Ã O - M O B I L E -->
+        <span id="btnMobile" class="material-icons-outlined" onclick="menuOnOff()">
+            menu
+            </span>
+    </header>
+
+    <!-- B A N N E R -->
+    <div class="banner">
+        <img class="img-banner" id="imga" src="imagens/imga.jpg">
+        <div class="text-banner" id="texta">
+            <p>Está enfrentando lenditão ou tem algum problema com o seu computador?</p>
+        </div>
+        <img class="img-banner" id="imgb" src="imagens/imgb.jpg">
+        <div class="text-banner" id="textb">
+            <p>Não se preocupe! Entre em contato e acharemos a melhor forma de te ajudar.</p>
+        </div>
+        <img class="img-banner" id="imgc" src="imagens/imgc.jpg">
+        <div class="text-banner" id="textc">
+            <p>Precisa de um site para alavancar os negócios?</p>
+        </div>
+    </div>
+
+    <!-- S E R V I Ç O S -->
+    <section id="servicos" class="servicos">
+        <span id="span1"></span>
+        <h1 class="h1-servicos">conheça nossos serviços</h1>
+        <div class="desc-servicos">
+            <p>Pensando em você, nós executamos serviços com transparência, qualidade e agilidade.</p>
+            <p>Abaixo, você conhece um pouco mais sobre nossas principais atividades.</p>
+        </div>
+        <div class="container-servicos">
+            <div class="servico">
+                <div id="h1btn1" class="container-h1" onclick="openService('btn1','serv-a')">
+                    <h1 class="h1-servico">formatação</h1>
+                    <span id="btn1" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-a" class="txt-servico">
+                    <p>Ao longo do tempo, devido ao uso contínuo do computador, percebemos que as máquinas vão ficando mais lentas, começam a travar os programas, e em casos mais extremos chegam até na temida “tela azul”.</p>
+                    <p>Se o seu computador está apresentando algum desses sintomas, então é um sinal de que ele está precisando ser formatado.</p>
+                    <p>A formatação vai ajudar na eficiência de sua performance durante os trabalhos, dará uma nova “vida” para a máquina. Vai acabar com aqueles programas difíceis de desinstalar como barras de navegador e outros, vírus que estavam escondidos, etc.</p>
+                </div>
+            </div>
+            <div class="servico">
+                <div id="h1btn2" class="container-h1" onclick="openService('btn2','serv-b')">
+                    <h1 class="h1-servico">instalação de software</h1>
+                    <span id="btn2" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-b" class="txt-servico">
+                    <p>Hoje em dia, instalar um programa, um aplicativo, um software qualquer que seja, já não é mais uma tarefa tão simples.</p>
+                    <p>As empresas que desenvolvem esses softwares costumam "camuflar" outros serviços durante a instalação, tais como barras de navegação, barras de pesquisa, mudam sua página inicial da internet, e até instalam os temidos "otimizadores de pc" que na verdade só servem mesmo para atrapalhar a vida do usuário e a saúde do computador.</p>
+                    <p>Levando isso em conta, nos atentamos em realizar uma instalação com todo cuidado para que ela seja completamente limpa, sem deixar passar nenhum tipo de "produto" camuflado na instalação do programa que você tanto deseja.</p>
+                </div>
+            </div>
+            <div class="servico">
+                <div id="h1btn3" class="container-h1" onclick="openService('btn3','serv-c')">
+                    <h1 class="h1-servico">manutenção preventiva</h1>
+                    <span id="btn3" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-c" class="txt-servico">
+                    <p>A manutenção preventiva garante uma maior vida útil e um melhor funcionamento dos computadores, evitando, por exemplo, a queima de componentes importantes, como processadores e discos rígidos. Deve ser realizada, independentemente de o computador apresentar problemas ou defeitos, pelo menos, uma vez por ano.</p>
+                    <p>A manutenção preventiva em computadores consiste em desmontar o micro, realizar a sua limpeza geral e checar todos os seus componentes e contatos. A poeira, principal causa de problemas, por exemplo, interfere na dissipação do calor e na oxidação dos contatos, sejam eles intermitentes ou que levem o computador a parar de funcionar.</p>
+                </div>
+            </div>
+            <div class="servico">
+                <div id="h1btn4" class="container-h1" onclick="openService('btn4','serv-d')">
+                    <h1 class="h1-servico">manutenção corretiva</h1>
+                    <span id="btn4" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-d" class="txt-servico">
+                    <p>Não deu tempo de fazer uma manutenção preventiva e seu computador acabou com algum problema? Então é hora da manutenção corretiva.</p>
+                    <p>A manutenção corretiva, comumente chamada de “reparo”, é a correção de um problema depois que o computador já quebrou ou parou de funcionar.</p>
+                    <p>O objetivo dessa forma de manutenção é restaurar a operacionalidade do sistema, corrigindo o problema ou substituindo os componentes danificados.</p>
+                    <p>Medidas corretivas comuns envolvem a remoção de vírus e malwares, a desinstalação de programas prejudiciais, a formatação e até a troca de componentes que podem ter sido danificados.</p>
+                </div>
+            </div>
+            <div class="servico">
+                <div id="h1btn5" class="container-h1" onclick="openService('btn5','serv-e')">
+                    <h1 class="h1-servico">troca de peças</h1>
+                    <span id="btn5" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-e" class="txt-servico">
+                    <p>Quer dar aquele upgrade no seu computador? Melhorar a performance ou mesmo a parte estética? Realizamos a instalação de componentes e periféricos novos e seu computador ficará do jeito que você precisa.</p>
+                    <p>Precisa apenas trocar algum componente ou algum periférico que já não está em bom estado ou até mesmo que tenha parado de funcionar? Também realizamos a troca desses itens com todo cuidado.</p>
+                </div>
+            </div>
+            <div class="servico">
+                <div id="h1btn6" class="container-h1" onclick="openService('btn6','serv-f')">
+                    <h1 class="h1-servico">atendimento online - remoto</h1>
+                    <span id="btn6" class="material-icons-outlined arrow-more">expand_more</span>
+                </div>
+                <div id="serv-f" class="txt-servico">
+                    <p>Trabalhamos com atendimento remoto de forma simples e rápida.</p>
+                    <p>Caso esteja com um problema passível de solução à distância, você receberá todo nosso apoio e orientação para que possamos realizar uma conexão remota e solucionar o seu problema sem que você precise sair de sua casa ou escritório.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- C O N T A T O -->
+    <section id="contato" class="contato">
+        <div class="container-contato">
+            <h1 class="tit-contato">
+                Atendimento, dúvidas ou sugestões?<br>contate-nos!
+            </h1>
+            <div class="contato-icones">
+                <div class="contato-tipo">
+                    <img src="imagens/icon-telefone.png" alt="" srcset="">
+                    <p>(41) 9 9821-9183</p>
+                </div>
+
+                <a class="link-contato" href="https://wa.me/5541998219183">
+                    <div class="contato-tipo">
+                        <img src="imagens/icon-whatsapp.png" alt="">
+                        <p>WhatsApp</p>
+                    </div>
+                </a>
+
+                <div class="contato-tipo" onclick="modalAnyDesk()">
+                    <img src="imagens/icon-anydesk.png" alt="" srcset="">
+                    <p>Atendimento Remoto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- C O N T A T O   M E N S A G E N -->
+    <section class="mensagem">
+        <form class="form-contato" action="https://formsquash.io/f/E55jQKkxmkoZs20ixB7r" method="POST">
+            <h1>deixe uma mensagem</h1>
+            <div class="box-nome">
+                <input class="input-txt" type="text" name="Nome" placeholder="Nome" required>
+                <input class="input-txt" type="email" name="E-mail" placeholder="E-mail" required>
+            </div>
+            <textarea class="textarea" name="Mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- W H A T S A P P   B T N -->
+    <a href="https://wa.me/5541998219183" target="blank">
+        <div class="whatsapp">
+            <img src="imagens/icon-whatsapp-color.png" alt="" srcset="">
+        </div>
+    </a>
+
+    <!-- M O D A L   A N Y   D E S K -->
+    <div id="modal-anydesk" class="modal-anydesk">
+        <div class="container-anydesk">
+            <div class="header-anydesk">
+                <h1>Suporte Remoto</h1>
+                <div class="btn-close" onclick="modalAnyDesk()">X</div>
+            </div>
+            <section class="anydesk">  
+                <div class="step">
+                    <p>Para realizarmos um acesso remoto, é necessário estar utilizando o computador que receberá o atendimento e o mesmo deve estar conectado à internet.</p>
+                    <p>Em seguida, basta seguir os passos abaixo:</p>
+                    <p>Primeiro, clique no botão abaixo para fazer o download do AnyDesk.</p>
+                    <p>Será através dele que iremos realizar uma conexão com o seu computador.</p>
+                    <div class="box-column">
+                        <p id="title-btn">AnyDesk</p>
+                        <a href="https://download.anydesk.com/AnyDesk.exe?_ga=2.228913308.1674676597.1634655033-312836373.1634655033">
+                            <div class="btn-download">Download</div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="step">
+                    <p>Salve em um um local fácil de achar. Por exemplo, na área de trabalho ou na pasta 'Downloads'.</p>
+                    <img src="imagens/anydesk_a.jpg" alt="">
+                </div>
+        
+                <div class="step">
+                    <p>Agora, abra a pasta onde foi salvo o AnyDesk, e dê dois cliques sobre o arquivo baixado.</p>
+                    <p>Em seguida, clique em 'Executar'.</p>
+                    <img src="imagens/anydesk_b.jpg" alt="">
+                </div>
+        
+                <div class="step">
+                    <p>Quando a tela do AnyDesk estiver aberta, clique na aba 'Nova Sessão' no canto superior esquerdo.</p>
+                    <p>Em seguida, anote o número exibido em 'Este dispositivo'.</p>
+                    <img src="imagens/anydesk_c.jpg" alt="">
+                </div>
+        
+                <div class="step">
+                    <p>Agora, basta entrar em contato com o técnico por WhatsApp ou ligação telefônica.</p>
+                    <p>Informe ao técnico o número anotado no passo anterior.</p>
+                    <p>Assim que o técnico realizar a conexão, esta tela será exibida em seu computador.</p>
+                    <img src="imagens/anydesk_d.jpg" alt="">
+                </div>
+        
+                <div class="step">
+                    <p>Apenas clique em 'Aceitar' e aguarde o atendimento.</p>
+                    <p>Agora você já está pronto(a) para receber atendimento remoto.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-dados-dev">
+            <div class="dados-dev-box-a">
+                <div class="dados-dev-box-a-comum dados-dev-redes-sociais">
+                    <h2>siga-nos nas redes sociais</h2>
+                    <div class="dados-dev-redes-sociais-box-icones">
+                        <div class="dados-dev-icone">
+                            <img class="img-icon" src="./imagens/icon-facebook.png">
+                        </div>
+                        <div class="dados-dev-icone">
+                            <img class="img-icon" src="./imagens/icon-instagram.png">
+                        </div>
+                        <div class="dados-dev-icone">
+                            <img class="img-icon" src="./imagens/icon-youtube.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="dados-dev-box-a-comum dados-dev-telefone">
+                    <h2>Telefone / WhatsApp</h2>
+                    <p>(41) 9 9876-5432</p>
+                </div>
+                <div class="dados-dev-box-a-comum dados-dev-horarios">
+                    <h2>Horário de atendimento:</h2>
+                    <p>Seg. a Sex.</p>
+                    <p>08:00h as 12:00h</p>
+                    <p>14:00h as 17:00h</p>
+                </div>
+            </div>
+
+            <hr id="dados-dev-hr">
+
+            <div class="dados-dev-box-b">
+                <p>Desenvolvido por:</p>
+                <p>Victor Soluções em T.I.</p>
+                <p>atendimento@victor.tec.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/servicos.js"></script>
+    <script src="js/modalAnyDesk.js"></script>
+</body>
+</html>

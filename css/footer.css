@@ -1,0 +1,79 @@
+footer{
+    background-color: #18333b;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0px 20px;
+}
+
+footer *{
+    color: #FFF;
+    font-size: 1.1rem;
+}
+
+.container-dados-dev{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.dados-dev-box-a h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* ÍCONES CONTAINER DADOS DEV */
+.dados-dev-icone{
+    margin: 10px;
+}
+
+.dados-dev-icone, .img-icon{
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.dados-dev-redes-sociais-box-icones{
+    display: flex;
+}
+
+.dados-dev-box-a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dados-dev-box-a-comum{
+    margin: 15px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1000px){
+    .dados-dev-box-a{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+#dados-dev-hr{
+    width: 80%;
+    max-width: 80%;
+    margin: 20px 0px;
+}
+
+.dados-dev-box-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
