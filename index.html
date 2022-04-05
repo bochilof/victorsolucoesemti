@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/whatsapp.css">
     <link rel="stylesheet" href="css/anydesk.css">
+    <link rel="stylesheet" href="css/formsquash.css">
     <link rel="shortcut icon" type="imagex/png" href="imagens/icon.ico">
 
     <script src="js/banner.js"></script>
@@ -28,7 +29,7 @@
     <header>
         <!-- L O G O -->
         <div class="logo">
-            <a href="http://192.168.100.100/victorinformatica">
+            <a href="https://victor.tec.br">
                 <img class="img-logo" src="imagens/logo-white.png">
             </a>
         </div>
@@ -169,11 +170,12 @@
 
     <!-- C O N T A T O   M E N S A G E N -->
     <section class="mensagem">
-        <form class="form-contato" action="https://formsquash.io/f/E55jQKkxmkoZs20ixB7r" method="POST">
+        <form class="form-contato" action="https://formsquash.io/f/wmuRETULfKJ3PgFUvNe1" method="POST">
             <h1>deixe uma mensagem</h1>
             <div class="box-nome">
                 <input class="input-txt" type="text" name="Nome" placeholder="Nome" required>
                 <input class="input-txt" type="email" name="E-mail" placeholder="E-mail" required>
+                <input class="input-txt" type="text" name="Telefone" placeholder="Telefone">
             </div>
             <textarea class="textarea" name="Mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
             <button class="btn-enviar" type="submit">Enviar</button>
@@ -240,6 +242,18 @@
         </div>
     </div>
 
+    <!-- M O D A L   F O R M U L Á R I O -->
+    <div class="modal-formulario" id="modal-formulario">
+        <div class="modal-formulario-popup">
+            <div class="modal-formulario-popup-titulo">atenção!</div>
+            <div class="modal-formulario-popup-msg">
+                <p>Sua mensagem foi enviada com sucesso.</p>
+                <p>Retornaremos o mais breve possível.</p>
+            </div>
+            <div class="modal-formulario-popup-btn" onclick="fecharModalForm()">Ok!</div>
+        </div>
+    </div>
+
     <footer>
         <div class="container-dados-dev">
             <div class="dados-dev-box-a">
@@ -259,7 +273,7 @@
                 </div>
                 <div class="dados-dev-box-a-comum dados-dev-telefone">
                     <h2>Telefone / WhatsApp</h2>
-                    <p>(41) 9 9876-5432</p>
+                    <p>(41) 9 9821-9183</p>
                 </div>
                 <div class="dados-dev-box-a-comum dados-dev-horarios">
                     <h2>Horário de atendimento:</h2>
@@ -274,13 +288,15 @@
             <div class="dados-dev-box-b">
                 <p>Desenvolvido por:</p>
                 <p>Victor Soluções em T.I.</p>
-                <p>atendimento@victor.tec.br</p>
+                <p>sac.victorsti@gmail.com</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/modal.js"></script>
     <script src="js/menu-mobile.js"></script>
     <script src="js/servicos.js"></script>
-    <script src="js/modalAnyDesk.js"></script>
+
+    <script>verificaModal()</script>
 </body>
 </html>
